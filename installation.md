@@ -10,4 +10,6 @@
 - screenfetch
 - code
 - docker
+- azure cli
+- terraform
 - flatpak: spotify
