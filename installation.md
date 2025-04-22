@@ -4,7 +4,7 @@
 
 ### Task
 - configure user sudo
-- configure virtual desk
+- configure virtual desk (kde)
 
 ### Software
 - screenfetch
@@ -12,4 +12,4 @@
 - docker
 - azure cli
 - terraform
-- flatpak: spotify
+- flatpak: spotify , draw.io
