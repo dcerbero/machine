@@ -1,0 +1,11 @@
+- name: Install Software
+  hosts: personalPc
+  tasks:
+    - name: Update all
+      ansible.builtin.apt:
+        upgrade: full
+        update_cache: yes
+    - name: Install basic software
+      package:
+        name: [git, screenfetch, flatpak]
+        state: present
