@@ -5,5 +5,10 @@ The main configuration files I use to install software on my personal computer
 ```
 sudo apt install ansible
 ```
-### 1 - Run playbook
-sudo ansible-playbook -i inventory.ini playbook.yaml
+### 1 - Run playbook 
+sudo ansible-playbook -i inventoryPc.ini playbook.yaml
+
+### 1.1 - Run playbook in virtualmachine for testing (ansible)
+ansible-playbook -i inventoryLab.ini playbook.yaml
+
+pending configure ssh key 
