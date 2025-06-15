@@ -7,5 +7,5 @@
         update_cache: yes
     - name: Install basic software
       package:
-        name: [git, screenfetch, flatpak, flameshot]
+        name: [ufw, git, flatpak, screenfetch, flameshot]
         state: present
