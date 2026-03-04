@@ -1,11 +1,22 @@
 - name: Install Software
   hosts: personalPc
   tasks:
-    - name: Update all
-      ansible.builtin.apt:
-        upgrade: full
-        update_cache: yes
-    - name: Install basic software
-      package:
-        name: [ufw, git, flatpak, screenfetch, flameshot]
+    - name: Ensure Homebrew is installed
+      shell: |
+        if ! command -v brew >/dev/null 2>&1; then
+          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+        fi
+      args:
+        creates: /opt/homebrew/bin/brew
+
+    - name: Install basic software via Homebrew
+      homebrew:
+        name: "{{ item }}"
         state: present
+      loop:
+        - git
+        - sshpass
+        - kubecolor
+        - tree
+        - watch
+        - flameshot
