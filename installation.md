@@ -1,6 +1,9 @@
-### Linux
-- os: debian 12
-- desk: kde
+### macOS
+- os: macOS (Ventura / Sonoma / 14.x or later)
+- tasks:
+  - install Homebrew
+  - configure user account and permissions
+  - set up `zsh` and brew-managed packages
 
 ### Task
 - configure user sudo
@@ -8,8 +11,6 @@
 
 ### Software
 - screenfetch
-- code
+- code (VS Code)
 - docker
 - azure cli
-- terraform
-- flatpak: spotify , draw.io
