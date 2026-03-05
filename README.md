@@ -1,18 +1,17 @@
 # ⚡ Software on my personal computer 
 
-**Operating system:** macOS 26.3
+**Operating system:** macOS 15.x (Sequoia)
 
 The main configuration files I use to install software on my personal computer
 
 ### 1 - Install ansible
 
-On **macOS 26.3**:
+On **macOS**:
 ```bash
 # use Homebrew
 brew install ansible
 ```
 ### 2 - Run playbook
-
 For your personal computer configuration:
 ```bash
 ansible-playbook -i inventoryPc.ini playbook.yaml
